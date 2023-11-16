@@ -1,0 +1,84 @@
+faça o readme.md desse codigo
+#Valor dos salários
+salario_base= 1000
+salario_gerente= 2000
+
+#Valor das vendas
+vendas_emily = int(input("Qual o valor de vendas da Emily? "))
+vendas_larissa = int(input("Qual o valor de vendas da Larissa? "))
+vendas_rafael = int(input("Qual o valor de vendas do Rafael? "))
+vendas_milena = int(input("Qual o valor de vendas da Milena? "))
+
+#Cálculo do faturamento
+faturamento_total = (vendas_emily + vendas_larissa + vendas_rafael + vendas_milena)
+print("Faturamento total = R$", faturamento_total)
+
+
+#Calculo do Salário da Emily
+comissao1e= salario_base + vendas_emily*1/100
+comissao2e= salario_base + vendas_emily*1.5/100
+comissao3e= salario_base + vendas_emily*2/100
+
+if(vendas_emily < 5000):
+  Salario_Emily = comissao1e
+  (print("\nSalário da Emily (vendedora) = R$", Salario_Emily))
+if(vendas_emily >=5000) and (vendas_emily <10000):
+  Salario_Emily = comissao2e
+  (print("\nSalário da Emily (vendedora) = R$", Salario_Emily))
+if(vendas_emily >= 10000):
+  Salario_Emily = comissao3e
+  (print("\nSalário da Emily (vendedora) = R$", Salario_Emily))
+
+#Calculo do Salário da Larissa
+comissao1l= salario_base + vendas_larissa*1/100
+comissao2l= salario_base + vendas_larissa*1.5/100
+comissao3l= salario_base + vendas_larissa*2/100
+
+if(vendas_larissa < 5000):
+  Salario_larissa = comissao1l
+  (print("Salário da Larissa (vendedora) = R$", Salario_larissa))
+if(vendas_larissa >=5000) and (vendas_larissa <10000):
+  Salario_larissa = comissao2l
+  (print("Salário da Larissa (vendedora) = R$", Salario_larissa))
+if(vendas_larissa >= 10000):
+  Salario_larissa = comissao3l
+  (print("Salário da Larissa (vendedora) = R$", Salario_larissa))
+
+#Calculo do Salário do Rafael
+comissao1r= salario_base + vendas_rafael*1/100
+comissao2r= salario_base + vendas_rafael*1.5/100
+comissao3r= salario_base + vendas_rafael*2/100
+
+if(vendas_rafael < 5000):
+  Salario_rafael = comissao1r
+  (print("Salário do Rafael (vendedor) = R$", Salario_rafael))
+if(vendas_rafael >=5000) and (vendas_rafael <10000):
+  Salario_rafael = comissao2r
+  (print("Salário do Rafael (vendedor) = R$", Salario_rafael))
+if(vendas_rafael >= 10000):
+  Salario_rafael = comissao3r
+  (print("Salário do Rafael (vendedor) = R$", Salario_rafael))
+
+#Calculo do Salário da Milena
+comissao1m= salario_base + vendas_milena*1/100
+comissao2m= salario_base + vendas_milena*1.5/100
+comissao3m= salario_base + vendas_milena*2/100
+
+if(vendas_milena < 5000):
+  Salario_milena = comissao1m
+  (print("Salário da Milena (vendedora) = R$", Salario_milena))
+if(vendas_milena >=5000) and (vendas_milena <10000):
+  Salario_milena = comissao2m
+  (print("Salário da Milena (vendedora) = R$", Salario_milena))
+if(vendas_milena >= 10000):
+  Salario_milena = comissao3m
+  (print("Salário da Milena (vendedora) = R$", Salario_milena))
+
+
+#Calculo do Salário da Jéssica
+comissaoj= salario_gerente + faturamento_total*0.5/100
+(print("Salário da Jéssica (gerente) = R$", comissaoj))
+
+#Total dos salários
+total_salarios = (Salario_Emily + Salario_larissa + Salario_rafael + Salario_milena + comissaoj)
+(print("Total dos salários = R$", total_salarios))
