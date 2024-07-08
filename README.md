@@ -36,5 +36,3 @@ O total de salários é a soma dos salários individuais dos vendedores mais o s
 1. Execute o script em um ambiente Python.
 2. Insira os valores das vendas quando solicitado.
 3. O script calculará e imprimirá os salários individuais, o salário da gerente e o total de salários.
-
-Esperamos que este script seja útil para o cálculo de salários com base em vendas!
